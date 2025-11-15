@@ -5,7 +5,7 @@
 
 ;List all your broken keys between quotes below. I.e. if your broken keys are g and f then the line below shoud be 
 ;brokenKeys := "gf"
-brokenKeys := "e"
+brokenKeys := "123quertyuiopasdfghjklzxcvbnm "
 
 
 ;timepan in which subsequent keystrokes should be ignored.
@@ -38,7 +38,7 @@ Loop, Parse, brokenKeys
 Loop, Parse, brokenKeys
 {    
     keyName := 
-    Hotkey, $%A_LoopField%, HotKeyHandler 
+    Hotkey, %A_LoopField%, HotKeyHandler 
 }
 
 
