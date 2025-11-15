@@ -5,7 +5,7 @@
 
 ;List all your broken keys between quotes below. I.e. if your broken keys are g and f then the line below shoud be 
 ;brokenKeys := "gf"
-brokenKeys := "gf"
+brokenKeys := "1234567890qwertyuiopasdfghjklzxcvbnm "
 
 
 ;timepan in which subsequent keystrokes should be ignored.
@@ -13,7 +13,7 @@ brokenKeys := "gf"
 ;However, this number also determines how fast autorepeat can happen (when you hold the key).
 ;The smaller the number the faster the auto repeat speed of the fixed keys will be  but also the higher the chance of the key bug happening when you type  normally.
 ;Values higher than 80 seems work best but it might depend on you operating system. 
-fixOffset := 80
+fixOffset := 120
 
 ;That's it. There is no need to change anything else below
 
@@ -49,4 +49,5 @@ HotKeyHandler:
         lastTimePressed[pressedKey] := A_TickCount
         Send %pressedKey%
     }
+
 return 
